@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Live Scores from SportyHQ!</title>
+</head>
+
+<body>
+    <h2>Enter SportyHQ Live Score URL</h2>
+    <!-- <input id="urlInput" class="url-input" value="https://www.sportyhq.com/tournament/tv_scores/10186/5248" /> -->
+    <input id="urlInput" class="url-input" value="" />
+    <button id="urlSubmitButton">Submit</button>
+
+
+    <div class="score-container" id="scoreContainer">
+        <div class="player-container">
+            <h1 id="playerAName" class="player-name"></h1>
+            <h1 id="playerAGames" class="player-games">0</h1>
+            <h1 id="playerAPoints" class="player-points">0</h1>
+        </div>
+
+        <h1 class="player-divider">-</h1>
+
+        <div class="player-container">
+            <h1 id="playerBPoints" class="player-points">0</h1>
+            <h1 id="playerBGames" class="player-games">0</h1>
+            <h1 id="playerBName" class="player-name text-right"></h1>
+        </div>
+    </div>
+
+    <p id="txtOutput" class="error"></p>
+
+    <h4>How to use:</h4>
+    <p>
+        Input the url for the <b>TV Display - Live Scores</b> from Sporty HQ into the text box, then just hit Submit and
+        it should refresh from that page in a nice style here to be used in OBS Studio.
+    </p>
+
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+</body>
+
+</html>

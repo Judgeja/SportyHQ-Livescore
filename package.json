@@ -1,0 +1,25 @@
+{
+  "name": "sportyhq-livescore",
+  "version": "1.0.4",
+  "description": "Live Scores for SportyHQ",
+  "main": "main.js",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "node-fetch": "^2.6.6"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0",
+    "@electron-forge/maker-squirrel": "^6.0.0",
+    "@electron-forge/maker-zip": "^6.0.0",
+    "electron": "^21.2.2"
+  },
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "makeall": "npm run make && npm run make32",
+    "make": "electron-forge make",
+    "make32": "electron-forge make --arch=ia32"
+  },
+  "author": "James Judge",
+  "license": "ISC"
+}

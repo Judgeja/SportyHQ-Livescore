@@ -1,0 +1,64 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+#urlInput{
+    width: 30rem;
+}
+
+.score-container{
+    --height: 3rem;
+    border: 6px solid black;
+    display: flex;
+    height: var(--height);
+    width: 830px;
+    margin: 1rem;
+    justify-content: space-around;
+    background: #ccc;
+}
+
+.player-container{
+    height: var(--height);
+    display: inline-flex;
+}
+.score-container h5, .score-container h1{
+    height: var(--height);
+    display: inline-flex;
+    margin: 0;
+    padding: 0  1rem;
+    text-align: center;    
+    justify-content: center;
+    align-items: center;
+}
+
+
+.score-container h1.player-divider{
+    background: #ccc;
+    padding: 0;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.player-name{
+    font-weight: bold;
+    background: #ccc;
+    margin: 0 2rem;
+    min-width: 16rem;
+}
+
+.player-games{
+    width: fit-content;
+    background: rgb(59, 59, 59);
+    color: aliceblue;
+}
+
+.player-points{
+    width: fit-content;
+    background: #ccc;
+}
+
+.error{
+    color: red;
+}
